@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const placeholder = ref('搜一下')
 const name = ref('name')
+const go = () => {}
 </script>
 
 <template>
@@ -29,13 +30,13 @@ const name = ref('name')
     </div>
 
     <div flex mt h-200px>
-      <Button />
+      <Button content="vue" url="" />
     </div>
 
     <div flex mt>
       <div w-sm bg-green h-2xl mr />
-      <div flex-1 bg-red h-2xl>
-        <Button />
+      <div flex-1 h-2xl>
+        <Link content="mpx" url="" />
       </div>
     </div>
 

@@ -11,8 +11,10 @@ import {
 
 export default defineConfig({
   shortcuts: [
-    ['btn', 'px-4 py-1 rounded inline-block bg-teal-700 text-white cursor-pointer hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ['btn', 'px-4 py-1 rounded bg-teal-700 text-white inline-block cursor-pointer hover:bg-teal-800 disabled:cursor-default disabled:opacity-50'],
+    ['link', 'inline-block cursor-pointer hover:color-orange-500 hover:border-b disabled:cursor-default disabled:opacity-50'],
     ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
+    ['flex-wrapper', 'flex justify-center items-center'],
   ],
   presets: [
     presetUno(),
