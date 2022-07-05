@@ -5,7 +5,7 @@ const props = defineProps<{
 }>()
 const content = props.content
 const jumpOut = () => {
-  window.open('https://github.com/vuejs/vue')
+  window.open(props.url)
 }
 </script>
 

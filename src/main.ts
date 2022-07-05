@@ -7,6 +7,19 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 
+// import initUnocssRuntime from '@unocss/runtime'
+// import {
+//   presetIcons, 
+// } from 'unocss'
+// initUnocssRuntime({ 
+//   presets: [
+//     presetIcons({
+//       scale: 1.2,
+//       warn: true,
+//     }),
+//   ],
+// })
+// not work
 const routes = setupLayouts(generatedRoutes)
 
 // https://github.com/antfu/vite-ssg
