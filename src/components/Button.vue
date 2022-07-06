@@ -1,13 +1,12 @@
 <script setup lang="ts">
-
 const props = defineProps<{
   name: string
   docs: string
   icon: string
   github: string
 }>()
-const icon = computed(() => ref('i-' + props.icon))
-const gitUrl = 'https://github.com' + props.github
+const icon = props.icon
+const gitUrl = `https://github.com${props.github}`
 const goOtherWebside = (url: string | URL | undefined) => {
   window.open(url)
 }

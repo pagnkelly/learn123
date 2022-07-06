@@ -3,7 +3,7 @@ import overuse from '../data/overuse'
 
 export const useDataStore = defineStore('data', () => {
   return {
-    overuse
+    overuse,
   }
 })
 

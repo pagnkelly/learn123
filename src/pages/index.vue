@@ -4,7 +4,6 @@ const name = ref('name')
 const go = () => {}
 
 const overUseData = useDataStore()
-console.log(overUseData, 'overUseData')
 </script>
 
 <template>
@@ -33,7 +32,7 @@ console.log(overUseData, 'overUseData')
     </div>
 
     <div flex mt h-200px flex-wrap flex-wrapper>
-      <Button v-for="o in overUseData.overuse" :key="o.name" :name="o.name" :docs="o.docs" :github="o.github" :icon="o.icon" mx-4/>
+      <Button v-for="o in overUseData.overuse" :key="o.name" :name="o.name" :docs="o.docs" :github="o.github" :icon="o.icon" mx-4 />
     </div>
 
     <div flex mt>

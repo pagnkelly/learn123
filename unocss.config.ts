@@ -8,6 +8,9 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import icons from './src/data/overuse'
+
+const formatIcons = [...new Set(icons.map(item => item.icon))]
 
 export default defineConfig({
   shortcuts: [
@@ -36,5 +39,5 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
-  safelist: 'prose prose-sm m-auto text-left'.split(' '),
+  safelist: ['prose', 'prose-sm', 'm-auto', 'text-left'].concat(formatIcons),
 })
