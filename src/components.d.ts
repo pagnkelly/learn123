@@ -12,6 +12,10 @@ declare module '@vue/runtime-core' {
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TabBar: typeof import('./components/tabs/TabBar.vue')['default']
+    TabNav: typeof import('./components/tabs/TabNav.vue')['default']
+    TabPane: typeof import('./components/tabs/TabPane.vue')['default']
+    Tabs: typeof import('./components/tabs/Tabs.vue')['default']
   }
 }
 

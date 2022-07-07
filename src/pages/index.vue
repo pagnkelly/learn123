@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Tabs from '~/components/tabs/Tabs.vue'
+import TabPane from '~/components/tabs/TabPane.vue'
 const placeholder = ref('搜一下')
 const name = ref('name')
 const go = () => {}
@@ -38,7 +40,10 @@ const overUseData = useDataStore()
     <div flex mt>
       <div w-sm bg-green h-2xl mr />
       <div flex-1 h-2xl>
-        <Link content="mpx" url="" />
+        <Tabs>
+          <TabPane>123456</TabPane>
+          <TabPane>122222</TabPane>
+        </Tabs>
       </div>
     </div>
 
