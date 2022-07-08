@@ -10,7 +10,6 @@ if (!tabsRoot)
   throw new Error('TabPane, usage: <Tabs><TabPane /></Tabs/>')
 const index = ref<string>()
 const active = computed(() => tabsRoot.currentName.value === (props.name ?? index.value))
-console.log(tabsRoot.currentName.value, props.name, 'dddddd')
 
 const pane = reactive({
   uid: instance.uid,

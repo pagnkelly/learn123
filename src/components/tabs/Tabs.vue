@@ -16,8 +16,8 @@ provide(TabsContextKey, {
   unregisterPane,
 })
 
-const handleNavClick = () => {
-
+const handleNavClick = (val: string) => {
+  currentName.value = val
 }
 </script>
 
@@ -25,7 +25,7 @@ const handleNavClick = () => {
   <div>
     <TabNav
       :panes="Object.values(panes)"
-      :on-tab-click="handleNavClick"
+      @on-tab-click="handleNavClick"
     />
     <slot />
   </div>

@@ -2,10 +2,13 @@
 import type { PaneProperties } from './constant'
 const props = defineProps<{
   panes: PaneProperties[]
-  onTabClick: () => {}
 }>()
-console.log(props, props.onTabClick, 'props')
+const emit = defineEmits(['onTabClick'])
 const vm = getCurrentInstance()!
+
+const handleTabClick = (val: string) => {
+  emit('onTabClick', val)
+}
 watch(
   () => props.panes,
   () => vm.update(),
@@ -15,6 +18,6 @@ watch(
 
 <template>
   <div flex>
-    <TabBar v-for="t of props.panes" :key="t.uid" :content="t.props.label" :active="t.active" />
+    <TabBar v-for="t of props.panes" :key="t.uid" :content="t.props.label" :name="t.props.name" :active="t.active" @on-tab-bar-click="handleTabClick" />
   </div>
 </template>
