@@ -1,14 +1,20 @@
 <script setup lang="ts">
+import type { PaneProperties } from './constant'
 const props = defineProps<{
-  name: string
-  docs: string
-  icon: string
-  github: string
+  panes: PaneProperties[]
+  onTabClick: () => {}
 }>()
+console.log(props, props.onTabClick, 'props')
+const vm = getCurrentInstance()!
+watch(
+  () => props.panes,
+  () => vm.update(),
+  { flush: 'post' },
+)
 </script>
 
 <template>
-  <div>
-    <TabBar />
+  <div flex>
+    <TabBar v-for="t of props.panes" :key="t.uid" :content="t.props.label" :active="t.active" />
   </div>
 </template>

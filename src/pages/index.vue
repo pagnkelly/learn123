@@ -4,7 +4,10 @@ import TabPane from '~/components/tabs/TabPane.vue'
 const placeholder = ref('搜一下')
 const name = ref('name')
 const go = () => {}
-
+const activeName = ref('aa')
+const handleClick = (tab: any, event: Event) => {
+  console.log(tab, event)
+}
 const overUseData = useDataStore()
 </script>
 
@@ -40,9 +43,13 @@ const overUseData = useDataStore()
     <div flex mt>
       <div w-sm bg-green h-2xl mr />
       <div flex-1 h-2xl>
-        <Tabs>
-          <TabPane>123456</TabPane>
-          <TabPane>122222</TabPane>
+        <Tabs v-model="activeName" @tab-click="handleClick">
+          <TabPane label="a" name="aa">
+            123456
+          </TabPane>
+          <TabPane label="b" name="bb">
+            122222
+          </TabPane>
         </Tabs>
       </div>
     </div>

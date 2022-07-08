@@ -1,20 +1,22 @@
 <script setup lang="ts">
 import { TabsContextKey } from './constant'
 const props = defineProps<{
-  name: string
   label: string
+  name: string
 }>()
+const instance = getCurrentInstance()!
+const tabsRoot = inject(TabsContextKey)
+if (!tabsRoot)
+  throw new Error('TabPane, usage: <Tabs><TabPane /></Tabs/>')
+const index = ref<string>()
+const active = computed(() => tabsRoot.currentName.value === (props.name ?? index.value))
+console.log(tabsRoot.currentName.value, props.name, 'dddddd')
 
 const pane = reactive({
   uid: instance.uid,
-  slots,
   props,
-  paneName,
   active,
-  index,
-  isClosable,
 })
-const tabsRoot: any = inject(TabsContextKey)
 
 onMounted(() => {
   tabsRoot.registerPane(pane)
@@ -25,7 +27,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div>
+  <div v-show="active">
     <slot />
   </div>
 </template>

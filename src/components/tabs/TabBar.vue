@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const props = defineProps<{
-  name: string
-  docs: string
-  icon: string
-  github: string
+  content: string
+  active: Boolean
 }>()
+const cls = ref(props.active ? 'bg-blue' : '')
+console.log(cls)
 </script>
 
 <template>
-  <div>
-    12345
+  <div px-6 first:pl-0 last:pr-0 :class="cls">
+    {{ props.content }}
   </div>
 </template>
