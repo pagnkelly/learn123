@@ -26,6 +26,7 @@ const handleClick = () => {
       :class="activeBorder"
       mb--2px
       py-2
+      w-max
     >
       {{ props.content }}
     </div>

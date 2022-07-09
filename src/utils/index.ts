@@ -1,4 +1,4 @@
-class NumberTransformRoman {
+export default class NumberTransformRoman {
   state: { roman: string }
   valueSplit: (v: any) => any
   transformN: (n: any) => void
@@ -69,4 +69,3 @@ class NumberTransformRoman {
   }
 }
 
-module.exports = NumberTransformRoman
