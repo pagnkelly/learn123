@@ -2,8 +2,8 @@
 import type { PaneProperties } from './constant'
 import { TabsContextKey } from './constant'
 const props = defineProps<{
-  modelValue: string
-  active: string
+  modelValue?: string
+  active?: string
 }>()
 const panes = reactive<any>({})
 const registerPane = (pane: PaneProperties) => (panes[pane.uid] = pane)

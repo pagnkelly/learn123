@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Tabs from '~/components/tabs/Tabs.vue'
-import TabPane from '~/components/tabs/TabPane.vue'
 const placeholder = ref('搜一下')
 const name = ref('name')
 const go = () => {}
@@ -15,7 +13,6 @@ const overUseData = useDataStore()
   <div>
     <header flex mt>
       <img w-203px h-33px mr src="https://gift-static.hongyibo.com.cn/static/kfpub/7724/learn.png">
-      <div bg-blue flex-1 />
     </header>
 
     <div flex mt>
@@ -41,20 +38,33 @@ const overUseData = useDataStore()
     </div>
 
     <div flex mt>
-      <div w-sm bg-green h-2xl mr />
-      <div flex-1 h-2xl>
+      <div w-300px h-2xl mr-10 border-r-2 border-gray-1 px-4>
         <Tabs v-model="activeName" @tab-click="handleClick">
-          <TabPane label="a" name="aa">
+          <TabPane label="常用" name="aa">
+            <Link content="es6" url="111" />
+          </TabPane>
+          <TabPane label="b" name="bb">
+            122222
+          </TabPane>
+          <TabPane label="ccc" name="cc">
+            dwdw
+          </TabPane>
+        </Tabs>
+      </div>
+      <div flex-1 h-2xl border-l-2 border-gray-1 px-4>
+        <Tabs v-model="activeName" @tab-click="handleClick">
+          <TabPane label="aaaaaa" name="aa">
             123456
           </TabPane>
           <TabPane label="b" name="bb">
             122222
           </TabPane>
+          <TabPane label="ccc" name="cc">
+            dwdw
+          </TabPane>
         </Tabs>
       </div>
     </div>
-
-    <div fixed bg-yellow h-50px w-50px right-20 bottom-20 />
   </div>
 </template>
 

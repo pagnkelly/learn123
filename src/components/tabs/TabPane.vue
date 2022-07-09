@@ -26,7 +26,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div v-show="active">
+  <div v-show="active" py-4>
     <slot />
   </div>
 </template>

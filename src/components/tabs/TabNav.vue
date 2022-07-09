@@ -17,7 +17,7 @@ watch(
 </script>
 
 <template>
-  <div flex>
+  <div flex border-b-2 border-gray-1>
     <TabBar v-for="t of props.panes" :key="t.uid" :content="t.props.label" :name="t.props.name" :active="t.active" @on-tab-bar-click="handleTabClick" />
   </div>
 </template>
