@@ -1,12 +1,9 @@
 <script setup lang="ts">
 import Left from '~/container/left/index.vue'
+import Right from '~/container/right/index.vue'
 const placeholder = ref('搜一下')
 const name = ref('name')
 const go = () => {}
-const activeName = ref('aa')
-const handleClick = (tab: any, event: Event) => {
-  console.log(tab, event)
-}
 const overUseData = useDataStore()
 </script>
 
@@ -40,19 +37,7 @@ const overUseData = useDataStore()
 
     <div flex mt>
       <Left />
-      <div flex-1 h-2xl border-l-2 border-gray-1 px-4>
-        <Tabs v-model="activeName" @tab-click="handleClick">
-          <TabPane label="aaaaaa" name="aa">
-            123456
-          </TabPane>
-          <TabPane label="b" name="bb">
-            122222
-          </TabPane>
-          <TabPane label="ccc" name="cc">
-            dwdw
-          </TabPane>
-        </Tabs>
-      </div>
+      <Right />
     </div>
   </div>
 </template>
