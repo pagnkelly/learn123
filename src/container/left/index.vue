@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Tab from './tab.vue'
 const handleClick = () => {}
-const leftData = useLeftDataStore()
+const leftData: any = useLeftDataStore()
 const activeName = ref(leftData[0] ? leftData[0].name : 'changyong')
 </script>
 

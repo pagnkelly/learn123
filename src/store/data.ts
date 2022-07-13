@@ -15,5 +15,13 @@ export const useLeftDataStore = defineStore('left', () => {
   }
 })
 
+export const useRightDataStore = defineStore('right', () => {
+  return {
+    renderData: [
+      { label: '常用', name: 'changyong', data: changyong },
+    ],
+  }
+})
+
 if (import.meta.hot)
   import.meta.hot.accept(acceptHMRUpdate(useDataStore, import.meta.hot))
