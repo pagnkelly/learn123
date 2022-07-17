@@ -1,5 +1,9 @@
-export default [
-  { content: 'es6(阮一峰)', url: 'https://es6.ruanyifeng.com/' },
-  { content: '微信小程序开发文档', url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/' },
-  { content: '支付宝小程序开发文档', url: 'https://opendocs.alipay.com/mini/developer' },
-]
+export default {
+  label: 'vue',
+  name: 'vue',
+  githubs: [
+    { name: 'vue2', github: '/vuejs/vue', docs: 'https://cn.vuejs.org/', icon: 'i-logos-vue' },
+    { name: 'vue3', github: '/vuejs/core', docs: 'https://v3.cn.vuejs.org/', icon: 'i-logos-vue' },
+    { name: 'vite', github: '/vitejs/vite', docs: 'https://cn.vitejs.dev/', icon: 'i-logos-vitejs' },
+  ],
+}

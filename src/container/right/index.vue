@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Tab from './tab.vue'
 const handleClick = () => {}
-const activeName = ref('aa')
+const activeName = ref('vue')
 const rightData: any = useRightDataStore()
 </script>
 
@@ -13,7 +13,7 @@ const rightData: any = useRightDataStore()
         :key="c.label"
         :label="c.label"
         :name="c.name"
-        :data="c.data"
+        :data="c.githubs"
       />
     </Tabs>
   </div>

@@ -2,9 +2,6 @@
 import Left from '~/container/left/index.vue'
 import Right from '~/container/right/index.vue'
 const overUseStore = useDataStore()
-
-const dd = useCounterStore()
-console.log(dd.data)
 </script>
 
 <template>
