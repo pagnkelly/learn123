@@ -1,7 +1,7 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import overuse from '../data/overuse'
 import changyong from '../data/left/changyong'
-import vue from '../data/right/vue'
+import right from '../data/right'
 import { useSearchStore } from './search'
 export const useDataStore = defineStore('data', () => {
   const searchValue = ref('')
@@ -26,9 +26,7 @@ export const useLeftDataStore = defineStore('left', () => {
 
 export const useRightDataStore = defineStore('right', () => {
   return {
-    renderData: [
-      vue,
-    ],
+    renderData: right,
   }
 })
 

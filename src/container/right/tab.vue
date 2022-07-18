@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <TabPane :label="props.label" :name="props.name" flex flex-col>
+  <TabPane :label="props.label" :name="props.name" flex flex-wrap>
     <Button
       v-for="c in props.data"
       :key="c.name"
@@ -15,6 +15,7 @@ const props = defineProps<{
       :icon="c.icon"
       :docs="c.docs"
       :github="c.github"
+      mx-4
     />
   </TabPane>
 </template>
