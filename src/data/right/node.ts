@@ -9,6 +9,6 @@ export default {
     { name: 'koa', github: '/koajs/koa', docs: 'https://github.com/guo-yu/koa-guide', icon: 'i-logos-koa' },
     { name: 'express', github: '/expressjs/express', docs: 'http://expressjs.com/', icon: 'i-logos-express' },
     { name: 'puppeteer', github: '/puppeteer/puppeteer', docs: 'https://pptr.dev/', icon: 'i-logos-puppeteer' },
-    { name: 'egg', github: '/eggjs/egg', docs: 'https://www.eggjs.org/', icon: 'i-logos-vue' },
+    { name: 'egg', github: '/eggjs/egg', docs: 'https://www.eggjs.org/', icon: 'https://www.eggjs.org/favicon.png' },
   ],
 }

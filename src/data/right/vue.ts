@@ -7,6 +7,6 @@ export default {
     { name: 'vueuse', github: '/vueuse/vueuse', docs: 'https://vueuse.org/', icon: 'i-logos-vueuse' },
     { name: 'nuxt', github: '/nuxt/nuxt.js', docs: 'https://nuxtjs.org/', icon: 'i-logos-nuxt-icon' },
     { name: 'vuex', github: '/vuejs/vuex', docs: 'https://vuex.vuejs.org/', icon: 'i-logos-vue' },
-    { name: 'pinia', github: '/vuejs/pinia', docs: 'https://pinia.vuejs.org/', icon: 'i-logos-vue' },
+    { name: 'pinia', github: '/vuejs/pinia', docs: 'https://pinia.vuejs.org/', icon: 'https://pinia.vuejs.org/logo.svg' },
   ],
 }
