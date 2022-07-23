@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Waterfall from './waterfall/index.vue'
 const props = defineProps<{
   label: string
   name: string
@@ -19,8 +20,6 @@ const props = defineProps<{
         mx-4
       />
     </div>
-    <div>
-      content
-    </div>
+    <Waterfall />
   </TabPane>
 </template>
