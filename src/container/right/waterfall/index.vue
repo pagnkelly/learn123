@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Item from './item.vue'
-const props = defineProps<{
-}>()
+// const props = defineProps<{
+// }>()
 const renderdata = [1, 2, 3, 4, 5, 6, 7]
 </script>
 
