@@ -8,6 +8,9 @@ const overUseStore = useDataStore()
   <div>
     <header flex mt>
       <img w-203px h-33px mr src="https://gift-static.hongyibo.com.cn/static/kfpub/7724/learn.png">
+      <button class="icon-btn mx-2 !outline-none" @click="toggleDark()">
+        <div i="carbon-sun dark:carbon-moon" />
+      </button>
     </header>
 
     <div flex mt>
