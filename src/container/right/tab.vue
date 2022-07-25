@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <TabPane :label="props.label" :name="props.name" flex flex-col>
+  <TabPane :label="props.label" :name="props.name" flex flex-col overflow-y-scroll h-2xl>
     <div flex flex-wrap>
       <Button
         v-for="c in props.data"
