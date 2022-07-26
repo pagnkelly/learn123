@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import Waterfall from './waterfall/index.vue'
+import type { ArticleList, Githubs } from '~/data/type'
 const props = defineProps<{
   label: string
   name: string
-  data: any
+  data: Githubs
+  articleList: ArticleList
 }>()
 </script>
 
@@ -20,6 +22,6 @@ const props = defineProps<{
         mx-4
       />
     </div>
-    <Waterfall />
+    <Waterfall :article-list="props.articleList" />
   </TabPane>
 </template>

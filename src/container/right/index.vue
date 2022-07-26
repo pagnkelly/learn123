@@ -14,6 +14,7 @@ const rightData: any = useRightDataStore()
         :label="c.label"
         :name="c.name"
         :data="c.githubs"
+        :article-list="c.articleList"
       />
     </Tabs>
   </div>
