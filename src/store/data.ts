@@ -1,6 +1,6 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import overuse from '../data/overuse'
-import changyong from '../data/left/changyong'
+import left from '../data/left'
 import right from '../data/right'
 import { useSearchStore } from './search'
 export const useDataStore = defineStore('data', () => {
@@ -18,9 +18,7 @@ export const useDataStore = defineStore('data', () => {
 
 export const useLeftDataStore = defineStore('left', () => {
   return {
-    renderData: [
-      { label: '常用', name: 'changyong', data: changyong },
-    ],
+    renderData: left,
   }
 })
 
