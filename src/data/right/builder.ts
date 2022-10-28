@@ -10,5 +10,6 @@ export default {
     { name: 'sequelize', github: '/sequelize/sequelize', docs: 'https://sequelize.org/', icon: 'i-logos-sequelize' },
     { name: 'browserify', github: '/browserify/browserify', docs: 'https://browserify.org/', icon: 'i-logos-browserify-icon' },
     { name: 'terser', github: '/terser/terser', docs: 'https://github.com/terser/terser', icon: 'i-logos-terser' },
+    { name: 'turbo', github: '/vercel/turbo', docs: 'https://turbo.build/', icon: 'i-logos-turborepo-icon' },
   ],
 }

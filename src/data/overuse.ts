@@ -53,4 +53,5 @@ export default [
   { name: 'taro', github: '/NervJS/taro', docs: 'https://docs.taro.zone/docs', icon: 'https://docs.taro.zone/img/taroLogo180.png' },
   { name: 'mpvue', github: '/Meituan-Dianping/mpvue', docs: 'http://mpvue.com/', icon: 'https://avatars.githubusercontent.com/u/37131965?s=200&v=4' },
   { name: 'windicss', github: '/windicss/windicss', docs: 'https://windicss.org/', icon: 'https://windicss.org/assets/logo.svg' },
+  { name: 'turbo', github: '/vercel/turbo', docs: 'https://turbo.build/', icon: 'i-logos-turborepo-icon' },
 ]
