@@ -14,12 +14,13 @@ const randomBg = `bg-${colors[Math.floor(Math.random() * 10)]}`
 </script>
 
 <template>
-  <div flex flex-col flex-items-center justify-center px-24px py-12px b-rd-12px cursor-pointer id="work-panel-go" @click="goOtherWebside">
+  <div id="work-panel-go" flex flex-col flex-items-center justify-center px-24px py-12px b-rd-12px cursor-pointer @click="goOtherWebside">
     <div :class="randomBg" w-10 h-10 flex justify-center flex-items-center b-rd-5>
       <div v-if="isIcon" :class="icon" color-white />
-      <img v-else :src="icon" alt="图标" w-5 h-5  z-1>
+      <img v-else :src="icon" alt="图标" w-5 h-5 z-1>
     </div>
-    <div mt>{{props.name}}</div>
+    <div mt>
+      {{ props.name }}
+    </div>
   </div>
 </template>
-

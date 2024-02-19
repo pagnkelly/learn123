@@ -9,6 +9,7 @@
     "jsx": "preserve",
     "skipLibCheck": true,
     "moduleResolution": "node",
+    "noImplicitAny": false,
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
@@ -17,7 +18,6 @@
     "types": [
       "vitest",
       "vite/client",
-      "vue/ref-macros",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
       "element-plus/global"

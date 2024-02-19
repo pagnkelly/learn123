@@ -17,5 +17,5 @@ export default [
   'i-carbon-phone-voice-filled',
   'i-carbon-airline-rapid-board',
   'i-carbon-cics-cmas',
-  'i-carbon-logo-wechat'
+  'i-carbon-logo-wechat',
 ]

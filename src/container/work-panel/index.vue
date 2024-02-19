@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import item from './item.vue'
+import PanelItem from './item.vue'
 import { usePanelStore } from '~/store/panel'
 
 const userStore = usePanelStore()
@@ -8,9 +7,11 @@ const userStore = usePanelStore()
 
 <template>
   <div>
-    <div font-bold text-24px>工作台</div>
+    <div font-bold text-24px>
+      工作台
+    </div>
     <div mt>
-      <item 
+      <PanelItem
         v-for="p of userStore.panelData"
         :key="p.category"
         :category="p.category"
