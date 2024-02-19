@@ -6,11 +6,12 @@ const props = defineProps<{
   github: string
 }>()
 const icon = props.icon
+const isIcon = icon.startsWith('i-')
+
 const gitUrl = `https://github.com${props.github}`
 const goOtherWebside = (url: string | URL | undefined) => {
   window.open(url)
 }
-const isIcon = icon.startsWith('i-')
 </script>
 
 <template>
@@ -20,7 +21,7 @@ const isIcon = icon.startsWith('i-')
       <img v-else :src="icon" alt="图标" w-5 h-5>
     </a>
     <Link :content="props.name" :url="props.docs" mx-2 />
-    <a icon-btn @click="goOtherWebside(gitUrl)">
+    <a v-if="props.github" icon-btn @click="goOtherWebside(gitUrl)">
       <div i-carbon-logo-github />
     </a>
   </div>

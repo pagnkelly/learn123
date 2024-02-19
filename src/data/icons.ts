@@ -1,0 +1,21 @@
+export default [
+  'i-carbon-fish',
+  'i-carbon-list',
+  'i-carbon-account',
+  'i-carbon-network-3',
+  'i-carbon-iot-platform',
+  'i-carbon-qr-code',
+  'i-carbon-session-border-control',
+  'i-carbon-result-draft',
+  'i-carbon-png',
+  'i-carbon-logo-npm',
+  'i-carbon-zip',
+  'i-carbon-cloud',
+  'i-carbon-software-resource-cluster',
+  'i-carbon-wikis',
+  'i-carbon-session-border-control',
+  'i-carbon-phone-voice-filled',
+  'i-carbon-airline-rapid-board',
+  'i-carbon-cics-cmas',
+  'i-carbon-logo-wechat'
+]

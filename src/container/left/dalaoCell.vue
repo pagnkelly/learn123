@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div flex items-center mb-2>
+  <div flex items-center mb-2 truncate>
     <img :src="props.avatar" :alt="props.content" h-50px w-50px border-rd-6>
     <Link :content="props.content" :url="props.url" m-l-1 />
     <div v-if="props.works" ml-1>

@@ -9,7 +9,8 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 import icons from './src/data/overuse'
-
+import iconss from './src/data/icons'
+import colors from './src/data/colors'
 const formatIcons = [...new Set(icons.map(item => item.icon))]
 
 export default defineConfig({
@@ -39,5 +40,5 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
-  safelist: ['prose', 'prose-sm', 'm-auto', 'text-left'].concat(formatIcons),
+  safelist: ['prose', 'prose-sm', 'm-auto', 'text-left'].concat(formatIcons).concat(iconss).concat(colors.map(item => `bg-${item}`)),
 })

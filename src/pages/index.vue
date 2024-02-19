@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Left from '~/container/left/index.vue'
 import Right from '~/container/right/index.vue'
+import WorkPanel from '~/container/work-panel/index.vue'
 const overUseStore = useDataStore()
 </script>
 
@@ -17,8 +18,12 @@ const overUseStore = useDataStore()
       <Search />
     </div>
 
-    <div flex mt h-200px flex-wrap flex-wrapper>
+    <div flex mt flex-wrap flex-wrapper>
       <Button v-for="o in overUseStore.mainData" :key="o.name" :name="o.name" :docs="o.docs" :github="o.github" :icon="o.icon" mx-4 />
+    </div>
+
+    <div flex mt>
+      <WorkPanel />
     </div>
 
     <div flex mt>

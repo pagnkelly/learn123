@@ -26,3 +26,7 @@ html.dark {
   width: 100%;
   height: 2px;
 }
+
+#work-panel-go:hover {
+  background: rgba(32, 33, 36, 0.1)
+}

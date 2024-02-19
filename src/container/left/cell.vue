@@ -10,7 +10,7 @@ const romanIdx = ntr.transformRoman(props.index)
 </script>
 
 <template>
-  <div flex>
+  <div flex truncate>
     <div w-25px>
       {{ romanIdx }}
     </div>
