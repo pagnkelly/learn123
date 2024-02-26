@@ -19,5 +19,5 @@ export default [
   'i-carbon-cics-cmas',
   'i-carbon-logo-wechat',
   'i-carbon-ai',
-  'i-carbon-face-wink'
+  'i-carbon-face-wink',
 ]
