@@ -18,4 +18,6 @@ export default [
   'i-carbon-airline-rapid-board',
   'i-carbon-cics-cmas',
   'i-carbon-logo-wechat',
+  'i-carbon-ai',
+  'i-carbon-face-wink'
 ]
