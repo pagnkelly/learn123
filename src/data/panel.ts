@@ -62,6 +62,16 @@ const panelData = [
         icon: 'i-carbon-zip',
         link: 'https://tinypng.com/',
       },
+      {
+        name: '豆包（AI）',
+        icon: 'i-carbon-ai',
+        link: 'https://www.doubao.com/chat/',
+      },
+      {
+        name: 'ICON',
+        icon: 'i-carbon-face-wink',
+        link: 'https://icon-sets.iconify.design/carbon/?prefixes=carbon',
+      },
     ],
   },
   {
